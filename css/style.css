@@ -255,11 +255,22 @@ a {
   color: #7b6cd5; 
 }
 .yoga-template .best-class-club .best-class-club-img {
-	background-image: url(../img/the-best-class-yoga.jpg);
+	transition: opacity 1s ease-in-out;
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
 }
+
+.dropdown-content {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+
+  .dropdown-content.active {
+    display: block;
+    max-height: 1000px; /* Adjust as needed */
+  }
 /*Advantages*/
 .yoga-template .advantages-section {
 	padding: 60px 15px 270px;
