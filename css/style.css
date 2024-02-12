@@ -15,14 +15,24 @@ body {
 	margin: 0;
 }
 
-#cursor {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	background-color: rgb(0, 0, 0);
-	border-radius: 50%;
-	pointer-events: none; /* Allow click-through */
-	transform: translate(-50%, -50%);
+.nav {
+	padding: 20px;
+	display: flex;
+	justify-content: space-around;
+	font-weight: 900;
+	background-color: white;
+	z-index: 1;
+}
+
+
+.nav a {
+	color: purple;
+	text-decoration: none;
+	transition: 0.2s;
+	}
+
+a:hover {
+	color: gold;
 }
 
 h1,h2,h3,
@@ -39,6 +49,12 @@ a {
 	text-decoration: none;
 	color:#555;
 	cursor: pointer;
+}
+
+#image-container {
+	height: 500px;
+	width: 20px;
+	overflow: hidden;
 }
 .main-container {
 	max-width: 1920px;
@@ -76,7 +92,7 @@ a {
 }
 /*Banner*/
 .yoga-template .banner {
-	background-image: url(../img/yoga-header.jpg);
+	background-image: url(../img/astar\ \(7\).jpeg);
 	background-repeat: no-repeat; 
 	background-size: cover;
 	background-position: center center;

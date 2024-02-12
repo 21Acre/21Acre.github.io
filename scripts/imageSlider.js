@@ -1,6 +1,14 @@
 const images = [
-    '/img/advanced-yoga-poses.jpg',
-    '/img/basic-yoga.jpg'
+    '/img/astar (1).jpeg',
+    '/img/astar (2).jpeg',
+    '/img/astar (3).jpeg',
+    '/img/astar (4).jpeg',
+    '/img/astar (5).jpeg',
+    '/img/astar (6).jpeg',
+    '/img/astar (7).jpeg',
+    '/img/astar (8).jpeg',
+    '/img/astar (9).jpeg',
+    '/img/astar (10).jpeg'
   ];
 
   const imageContainer = document.getElementById('image-container');
