@@ -15,6 +15,32 @@ body {
 	margin: 0;
 }
 
+
+.loader-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+  }
+  
+  .loader {
+	border: 16px solid #f3f3f3;
+	border-top: 16px solid #3498db;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+  
+  .hidden {
+	display: none;
+  }
+
 .nav {
 	padding: 20px;
 	display: flex;
@@ -52,10 +78,19 @@ a {
 }
 
 #image-container {
-	height: 500px;
-	width: 20px;
-	overflow: hidden;
+	transform: rotate(2deg);
+	animation-iteration-count: infinite;
+	animation-duration: 1.9999s;
+	animation-name: blurImg;
+	box-shadow: 0 0 20px;
+	z-index: 1;
 }
+
+@keyframes blurImg{
+	from{transform: rotate(2deg);}
+	to{transform: rotate(-2deg);}
+}
+
 .main-container {
 	max-width: 1920px;
 	width: 100%;
@@ -931,4 +966,19 @@ background-image: -o-linear-gradient(top, #FFEB3C 0%, #ff9600 100%);
 background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFEB3C), color-stop(100, #ff9600));
 background-image: -webkit-linear-gradient(top, #FFEB3C 0%, #ff9600 100%);
 background-image: linear-gradient(to bottom, #FFEB3C 0%, #ff9600 100%);
+}
+
+/* Style for the confirmation message */
+#confirmation {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    z-index: 9999;
 }

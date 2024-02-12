@@ -21,13 +21,20 @@
     <title>21Acre</title>
   </head>
   <body>
-    <div class="nav">
-        <a href="#">HOME</a>
-      <a href="#">ABOUT</a>
-      <a href="#">OUR TEAM</a>
-      <a href="#">CONTACT US</a>
+
+    <div class="loader-wrapper">
+      <div class="loader"></div>
     </div>
-    <div class="main-container yoga-template">
+    <div class="content hidden">
+
+
+    <div class="nav">
+        <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#team">OUR TEAM</a>
+      <a href="#contact">CONTACT US</a>
+    </div>
+    <div class="main-container yoga-template" id="home">
       <!--Banner section-->
       <div class="banner">
         <div class="banner-overlay"></div>
@@ -35,13 +42,14 @@
           <div class="row">
             <div class="col-12 content-col">
               <h1 class="site-title">
-                21Acre Foundation</h1>
-              <p class="site-title-desc">Home
-                about legacy xp
-                OUR APPROACH
+                Welcome to 21acre Enterprises,</h1>
+              <p class="site-title-desc"> a dynamic think hub pioneering innovation in three vital sectors: agriculture, arts, and healthcare.
+
+                At 21acre, we cultivate groundbreaking ideas, fostering growth and sustainability in agriculture, unlocking creativity through the arts, and advancing healthcare solutions that enhance well-being.
                 
-                Our approach comes from an earnest desire to fully understand our client's aspirations and ambitions. Once we have a full grasp on that, we address the roots of any challenge that might prevent them from reaching their goals. Consequently, we leave no gaps in our service offering as a 360º agency.
-                 The key strength is simple: we LOVE what we do!
+                With a commitment to interdisciplinary collaboration and cutting-edge research, we are dedicated to shaping a brighter future for communities worldwide.
+                
+                Join us on our journey as we redefine boundaries and transform possibilities across 21 acres of imagination and innovation
               </p>
                  <a class="banner-btn" href="#">Contact Us</a>
             </div>
@@ -50,7 +58,7 @@
       </div>
      
       <!--Class Yoga Center-->
-      <div class="best-class-club">
+      <div class="best-class-club" id="about">
         <div class="row best-class-sections-detail">
           <div class="col-lg-6 best-class-club-desc">
             <div class="row">
@@ -62,20 +70,32 @@
                 <ul>
                   <li onclick="toggleDropdown('dropdown1')">21Acre farm (Agriculture)</li>
                   <div class="dropdown-content" id="dropdown1">
-                    <p>Additional information:</p>
-                    <p>This is the additional information for the first item.</p>
+                    <p>Our farm is a vibrant ecosystem </p>
+                    <p>where pigs, fish, and cows thrive in sustainable environments designed to optimize their well-being and productivity. Through careful stewardship, we prioritize ethical animal husbandry practices, ensuring the highest standards of welfare.
+
+                      Furthermore, our commitment to organic materials and farming methods underscores our dedication to environmental sustainability and the production of wholesome, nutritious food. By harnessing the power of nature and embracing organic principles, we strive to cultivate healthier ecosystems and communities.
+                      
+                      Join us as we sow the seeds of change and cultivate a future where agriculture nourishes both the body and the planet..</p>
                   </div>
                 
                   <li onclick="toggleDropdown('dropdown2')">21Acre media(Arts)</li>
                   <div class="dropdown-content" id="dropdown2">
-                    <p>Additional information:</p>
-                    <p>This is the additional information for the second item.</p>
+                    <p>In our vibrant arts community,</p>
+                    <p> we celebrate diversity and self-expression through a myriad of mediums, from captivating singing performances to electrifying rap battles and mesmerizing modeling showcases.
+
+                      One of our standout events is the MS Organic Pageant, a unique beauty competition that challenges contestants to redefine fashion by creating stunning ensembles using only organic materials. This innovative platform not only showcases the beauty of sustainable fashion but also inspires creativity and environmental consciousness.
+                      
+                      At 21acre, we believe in the transformative power of the arts to ignite dialogue, inspire change, and foster connection. Join us as we amplify voices, cultivate talent, and unleash the boundless potential of artistic expression.</p>
                   </div>
                 
                   <li onclick="toggleDropdown('dropdown3')">21Acre farmmacy(health care)</li>
                   <div class="dropdown-content" id="dropdown3">
-                    <p>Additional information:</p>
-                    <p>This is the additional information for the third item.</p>
+                    <p>At our farmmacy</p>
+                    <p> we offer a unique selection of organic medicines crafted with care from nature's bounty. Rooted in the principles of natural healing, our remedies harness the power of organic ingredients to promote health and vitality while minimizing harm to the planet.
+
+                      Our approach to healthcare extends beyond traditional medicine, as we prioritize practices that support environmental sustainability and ecosystem health. From eco-friendly packaging to responsible sourcing, every aspect of our operations reflects our dedication to preserving the natural world.
+                      
+                      Join us as we embark on a journey toward a healthier future, where people and the environment thrive in harmony. Together, we can cultivate wellness for generations to come.</p>
                   </div>
                 </ul>
               </div>
@@ -88,7 +108,7 @@
       </div>
      
       <!--Trainers-->
-       <div class="trainer-section">
+       <div class="trainer-section" id="team">
         <div class="row sections-detail">
           <section>
             <section class="team-page-section">
@@ -216,6 +236,20 @@
                                 </div>
                             </div>
                         </div>
+
+                        <h1>Contact Us</h1>
+<form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+    <button type="button" onclick="sendMessage()">Send</button>
+</form>
+
+<!-- Confirmation message -->
+<div id="confirmation">Message sent!</div>
         
                     </div>
                 </div>
@@ -242,7 +276,8 @@
           </div>
         </div>
       </footer>
-    </div>    
+    </div>  
+    </div>  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
