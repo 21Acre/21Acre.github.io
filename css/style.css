@@ -40,26 +40,88 @@ body {
   .hidden {
 	display: none;
   }
-
+/* Navbar styles */
 .nav {
-	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #33333346;
+	backdrop-filter: blur(3px);
+	color: white;
+	padding: 20px 50px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.623);
 	display: flex;
-	justify-content: space-around;
-	font-weight: 900;
-	background-color: white;
-	z-index: 1;
-}
-
-
-.nav a {
-	color: purple;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 4;
+  }
+  
+  .menu-toggle {
+	cursor: pointer;
+	display: none; /* Initially hidden on larger screens */
+  }
+  
+  .menu-links {
+	display: flex;
+  }
+  
+  .menu-links a {
 	text-decoration: none;
-	transition: 0.2s;
+	color: white;
+	margin-right: 20px;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+	.menu-toggle {
+	  display: block; /* Display toggle button on smaller screens */
+	}
+	
+	.menu-links {
+	  display: none; 
+	  flex-direction: column;
+	  position: absolute;
+	  top: 80px;
+	  background-color: #3333331a;
+	  width: 100%;
+	  padding: 10px 0;
+	  padding: 20px;
+	border-radius: 5px;
+	backdrop-filter: blur(10px);
+	border: solid rgba(255, 255, 255, 0.301) 1px;
+	}
+	
+	.menu-links a {
+	  margin: 5px 0;
 	}
 
-a:hover {
-	color: gold;
-}
+	.menu-links a:hover {
+		color: gold;
+	  }
+  }
+
+  .menu-toggle {
+	cursor: pointer;
+	background-color: white;
+	transition: 0.3s;
+  }
+
+
+  .menu-toggle:hover {
+	background-color: gold;
+  }
+
+  .bar {
+
+	padding:2px;
+	width: 10vw;
+	border: solid black;
+	
+
+  }
+  
+  
 
 h1,h2,h3,
 h4,h5,h6 {

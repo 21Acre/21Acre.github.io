@@ -7,6 +7,15 @@ window.addEventListener("load", function() {
   document.querySelector(".content").classList.remove("hidden");
 });
 
+//toggle box
+
+// Function to toggle the visibility of the navigation links
+function toggleMenu() {
+  var menuLinks = document.querySelector('.menu-links');
+  menuLinks.style.display === 'none' ? menuLinks.style.display = 'flex' : menuLinks.style.display = 'none';
+}
+
+
 
 //drop downs for more information
 
