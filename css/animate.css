@@ -1,0 +1,25 @@
+/* Initial state */
+.site-title,
+.site-title-desc,
+.banner-btn {
+    opacity: 0;
+    transform: translateY(100px); /* Slide down from 100px */
+}
+
+/* Animation */
+.site-title,
+.site-title-desc,
+.banner-btn {
+    animation: slideIn 1s forwards; /* Slide in animation with 1 second duration */
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100px); /* Start position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End position */
+    }
+}
