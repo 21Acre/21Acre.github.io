@@ -20,12 +20,14 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
+	height: 100%;	
+	background-color: purple;
+	height: 100vh;
   }
   
   .loader {
 	border: 16px solid #f3f3f3;
-	border-top: 16px solid #3498db;
+	border-top: 16px solid gold;
 	border-radius: 50%;
 	width: 120px;
 	height: 120px;
@@ -46,7 +48,7 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #33333346;
+	background-color: black;
 	backdrop-filter: blur(3px);
 	color: white;
 	padding: 20px 50px;
@@ -69,7 +71,12 @@ body {
   .menu-links a {
 	text-decoration: none;
 	color: white;
-	margin-right: 20px;
+	margin-right: 50px;
+	transition: 0.2s;
+  }
+
+  .menu-links a:hover {
+	color: gold;
   }
   
   /* Media query for smaller screens */
@@ -83,7 +90,7 @@ body {
 	  flex-direction: column;
 	  position: absolute;
 	  top: 80px;
-	  background-color: #3333331a;
+	  background-color: black;
 	  width: 100%;
 	  padding: 10px 0;
 	  padding: 20px;
@@ -740,7 +747,7 @@ background-image: linear-gradient(to bottom, #FFEB3C 0%, purple  100%);
 	font-size: 1em;
 	padding: 15px;
 	background: none;
-	border: solid  1px;
+	border: solid  1px black;
 	transition: 0.2s;
 	color: gold;
 }
@@ -751,7 +758,7 @@ background-image: linear-gradient(to bottom, #FFEB3C 0%, purple  100%);
 }
 
 #contact textarea{
-	border: solid 1px gold;
+	border: solid 1px black;
 	width: 50%;
 }
 
@@ -762,5 +769,5 @@ background-image: linear-gradient(to bottom, #FFEB3C 0%, purple  100%);
 #contact input {
 	width: 50%;
 	padding: 5px;
-	border: gold solid 1px;
+	border: black solid 1px;
 }
