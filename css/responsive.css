@@ -1,5 +1,13 @@
 @media (max-width: 991.98px) {
 
+
+	#image-container{
+		position: relative;
+		left: 10%;
+		width: 70%;
+		bottom: 200px;
+		overflow: visible;
+	}
 	/*Global*/
 	.sections-detail {
 		margin: 0 0 30px;
@@ -128,5 +136,7 @@
 	    border-radius: 3px;
 	    transform: translate(-50%, -50%);
 	}
+
+
 
 }

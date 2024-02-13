@@ -81,7 +81,7 @@ function sendMessage() {
   body += "Message: " + message;
 
   // Send email
-  var mailtoLink = "mailto:youremail@example.com" + "?subject=Message from " + name + "&body=" + encodeURIComponent(body);
+  var mailtoLink = "mailto:21acretv@gmail.com" + "?subject=Message from " + name + "&body=" + encodeURIComponent(body);
 
   // Open default email client
   window.location.href = mailtoLink;
