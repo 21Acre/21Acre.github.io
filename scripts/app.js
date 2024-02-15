@@ -93,3 +93,18 @@ function sendMessage() {
   }, 2000);
 }
 
+//our responsibilities
+
+window.addEventListener('scroll', function() {
+  var responsibilities = document.querySelectorAll('.responsibility');
+  var windowHeight = window.innerHeight;
+
+  for (var i = 0; i < responsibilities.length; i++) {
+    var responsibility = responsibilities[i];
+    var positionFromTop = responsibility.getBoundingClientRect().top;
+
+    if (positionFromTop - windowHeight <= 0) {
+      responsibility.classList.add('visible');
+    }
+  }
+});
