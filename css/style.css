@@ -58,6 +58,11 @@ body {
 	align-items: center;
 	z-index: 4;
   }
+
+    .logo {
+    height: 40px; /* Adjust the height of the logo */
+    width: auto;
+  }
   
   .menu-toggle {
 	cursor: pointer;
