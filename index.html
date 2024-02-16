@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="font/web-font.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
 
+    <!-- <link rel="icon" href="img/21 logo.png" type="image/x-icon"> -->
     <title>21Acre</title>
   </head>
   <body>
@@ -31,6 +32,7 @@
 
 <!-- Navbar with toggle button -->
 <div class="nav">
+  <img src="" alt="" class="logo">
   <div class="menu-toggle" onclick="toggleMenu()">
     <div class="bar"></div>
     <div class="bar"></div>
@@ -40,9 +42,11 @@
     <a href="#home">HOME</a>
     <a href="#about">ABOUT</a>
     <a href="#team">OUR TEAM</a>
+    <a href="#responsibilities">OUR SOCIAL RESPONSIBILITY</a>
     <a href="#contact">CONTACT US</a>
   </div>
 </div>
+
 
 
     <div class="main-container yoga-template" id="home">
@@ -53,7 +57,7 @@
           <div class="row">
             <div class="col-12 content-col">
               <h1 class="site-title">
-                Welcome to 21acre Enterprises,</h1>
+                Welcome to 21Acre Enterprises</h1>
               <p class="site-title-desc"> a dynamic think hub pioneering innovation in three vital sectors: agriculture, arts, and healthcare.
 
                 At 21acre, we cultivate groundbreaking ideas, fostering growth and sustainability in agriculture, unlocking creativity through the arts, and advancing healthcare solutions that enhance well-being.
@@ -79,7 +83,7 @@
               <div class="col-lg-8 detail-col-club">
                 <h2 class="club-section-title">About us</h2>
                 <ul>
-                  <li onclick="toggleDropdown('dropdown1')">Lorem Ipsum<br><i class="arrow down"></i></li>
+                  <li onclick="toggleDropdown('dropdown1')">Agriculture<br><i class="arrow down"></i></li>
                   <div class="dropdown-content" id="dropdown1">
                     <p>Lorem Ipsum </p>
                     <p>
@@ -94,7 +98,7 @@
                     </p>
                   </div>
                 
-                  <li onclick="toggleDropdown('dropdown2')">Lorem Ipsum<br><i class="arrow down"></i></li>
+                  <li onclick="toggleDropdown('dropdown2')">Arts<br><i class="arrow down"></i></li>
                   <div class="dropdown-content" id="dropdown2">
                     <p>Lorem Ipsum </p>
                     <p>
@@ -109,7 +113,7 @@
                     </p>
                   </div>
                 
-                  <li onclick="toggleDropdown('dropdown3')">Lorem Ipsum<br><i class="arrow down"></i></li>
+                  <li onclick="toggleDropdown('dropdown3')">Health Care<br><i class="arrow down"></i></li>
                   <div class="dropdown-content" id="dropdown3">
                     <p>Lorem Ipsum </p>
                     <p>
@@ -259,6 +263,36 @@
                 </div>
             </section>
             
+
+<!-- OUR RESPONSIBILITY -->
+
+<section id="responsibilities">
+  <div class="container">
+    <div class="content">
+      <h2 class="responsible">Our Social Responsibility</h2>
+      <div class="responsibility">
+        <div class="text">
+          <h3>Responsibility 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor urna id commodo fringilla. Integer euismod tempus mi, nec feugiat mi tincidunt at.</p>
+        </div>
+        <div class="image">
+          <img src="img/astar (4).jpeg" alt="Responsibility 1 Image" style="width: 300px; border-radius: 100%;">
+        </div>
+      </div>
+      <div class="responsibility">
+        <div class="image">
+          <img src="img/astar (10).jpeg" alt="Responsibility 2 Image" style="width: 300px; border-radius: 100%;">
+        </div>
+        <div class="text">
+          <h3>Responsibility 2</h3>
+          <p>Integer nec tellus vel tortor bibendum placerat. Vivamus maximus arcu vitae mauris fringilla, nec viverra sapien molestie.</p>
+        </div>
+      </div>
+      <!-- Add more responsibilities as needed -->
+    </div>
+  </div>
+</section>
+
 
                         
 <form id="contact">

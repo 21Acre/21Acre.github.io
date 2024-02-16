@@ -15,6 +15,24 @@ function toggleMenu() {
   menuLinks.style.display === 'none' ? menuLinks.style.display = 'flex' : menuLinks.style.display = 'none';
 }
 
+//slider
+
+document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('a');
+
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+});
+
+
 
 
 //drop downs for more information
@@ -43,22 +61,6 @@ cards.forEach((item) => {
   });
 });
 
-//slider
-
-document.addEventListener('DOMContentLoaded', function() {
-  const navLinks = document.querySelectorAll('nav a');
-
-  navLinks.forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-
-      const targetId = this.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-
-      targetElement.scrollIntoView({ behavior: 'smooth' });
-    });
-  });
-});
 
 
 //massaging
@@ -93,3 +95,18 @@ function sendMessage() {
   }, 2000);
 }
 
+//our responsibilities
+
+window.addEventListener('scroll', function() {
+  var responsibilities = document.querySelectorAll('.responsibility');
+  var windowHeight = window.innerHeight;
+
+  for (var i = 0; i < responsibilities.length; i++) {
+    var responsibility = responsibilities[i];
+    var positionFromTop = responsibility.getBoundingClientRect().top;
+
+    if (positionFromTop - windowHeight <= 0) {
+      responsibility.classList.add('visible');
+    }
+  }
+});
