@@ -18,7 +18,7 @@ function toggleMenu() {
 //slider
 
 document.addEventListener('DOMContentLoaded', function() {
-  const navLinks = document.querySelectorAll('a');
+  const navLinks = document.querySelectorAll('.navLink');
 
   navLinks.forEach(function(link) {
     link.addEventListener('click', function(e) {
