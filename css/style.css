@@ -595,8 +595,9 @@ top:0px;
 left:70px;
 bottom:0px;
 border-radius:10px;
-background-color:#f5f5f5;
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.24);
+background-color:#000000;
+border: 1px gold solid;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.466);
 -webkit-transition:all 600ms ease;
 -moz-transition:all 600ms ease;
 -ms-transition:all 600ms ease;
@@ -669,6 +670,8 @@ box-shadow:inset 0px 0px 35px rgba(0,0,0,0.20);
 position:relative;
 width:100%;
 display:block;
+border-radius: 20px;
+border: 1px gold solid;
 }
 
 .team-block .inner-box .lower-content{
