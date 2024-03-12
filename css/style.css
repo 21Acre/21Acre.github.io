@@ -701,7 +701,7 @@ transition: all 0.4s;
 .team-block .inner-box .lower-content .designation{
 position:relative;
 margin-top:5px;
-color:purple;
+color:rgb(255, 255, 255);
 font-size:14px;
 }
 
